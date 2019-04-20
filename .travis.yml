@@ -7,6 +7,8 @@ install:
     - pip install flake8 cpplint
 script:
     - flake8
+    - cpplint --quiet --recursive --filter="-legal/copyright,-runtime/int,-runtime/arrays" .
+    - ./run_all.sh
 notifications:
     email:
         - arcursino@gmail.com
