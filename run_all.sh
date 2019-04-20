@@ -22,9 +22,9 @@ function run_c {
 
 function run_python {
     if [[ -f input.txt ]]; then
-        python ./*.py < input.txt > result.txt
+        python3 ./*.py < input.txt > result.txt
     else
-        python ./*.py > result.txt
+        python3 ./*.py > result.txt
     fi
 }
 
