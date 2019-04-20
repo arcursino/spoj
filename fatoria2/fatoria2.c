@@ -12,6 +12,8 @@ int main() {
         printf("%d\n", fat(n));
         break;
     }
+
+    return 0;
 }
 
 int fat(int n) {

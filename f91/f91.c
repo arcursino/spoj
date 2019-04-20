@@ -19,4 +19,6 @@ int main() {
         result = f91(n);
         printf("f91(%d) = %d\n", n, result);
     }
+
+    return 0;
 }
