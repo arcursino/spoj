@@ -11,8 +11,8 @@ fi
 function run_c {
     gcc $warning_flags ./*.c -lm
 
-    if [[ -f in.txt ]]; then
-        ./a.out < in.txt > result.txt
+    if [[ -f input.txt ]]; then
+        ./a.out < input.txt > result.txt
     else
         ./a.out > result.txt
     fi
@@ -21,8 +21,8 @@ function run_c {
 }
 
 function run_python {
-    if [[ -f in.txt ]]; then
-        python ./*.py < in.txt > result.txt
+    if [[ -f input.txt ]]; then
+        python ./*.py < input.txt > result.txt
     else
         python ./*.py > result.txt
     fi
@@ -31,12 +31,12 @@ function run_python {
 function run_and_check {
     if [[ "$(find . -name '*.c' | wc -l)" -eq 1 ]]; then
         run_c
-        diff out.txt result.txt
+        diff output.txt result.txt
     fi
 
     if [[ "$(find . -name '*.py' | wc -l)" -eq 1 ]]; then
         run_python
-        diff out.txt result.txt
+        diff output.txt result.txt
     fi
 
     rm result.txt
