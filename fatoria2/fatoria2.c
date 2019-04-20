@@ -1,4 +1,5 @@
-// tags: recursivo, fatorial, iniciante.
+// tags: recursivo, fatorial, função, iniciante
+
 #include <stdio.h>
 
 int fat(int n);

@@ -1,4 +1,4 @@
-// tag: recursivo, begginner, function, f91.
+// tags: recursivo, iniciante, função, f91
 
 #include <stdio.h>
 

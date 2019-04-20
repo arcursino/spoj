@@ -8,6 +8,7 @@ install:
 script:
     - flake8
     - cpplint --quiet --recursive --filter="-legal/copyright,-runtime/int,-runtime/arrays" .
+    - ./check_tags.sh
     - ./run_all.sh
 notifications:
     email:
